@@ -7,7 +7,7 @@
 
 
                                           <div class="card-body " >
-                                              <h3 style="color:wheat">Agregar Coche </h3>
+                                              <h3 style="color:rgb(174, 209, 18)">Agregar Coche </h3>
 
                                               <form class="mt-4" [formGroup]="cocheForm" (ngSubmit)="onSubmit()">
                                                   <div class="row">
@@ -50,14 +50,22 @@
 
                           <div class="p-5 mb-4 bg-light rounded-3" style="background-image: url('../../../assets/road-7148369.jpg');">
                             <div class="container-fluid py-5">
-                              <h1 class="display-5 fw-bold">Instrucciones de creacion</h1>
+                              <h1 class="display-5 fw-bold"> <span style="color:#3cc4ce">Instrucciones</span>  de creacion</h1>
+                              <br>
+                              <br>
+
                               <ul>
                                 <li><span style="color:#3cc4ce">imagen :</span> <span style="color:beige"> Poner enlace de la imagen Ej: https://lamborghini.3434.jpg</span></li>
-                                <li><span style="color:#3cc4ce">Marca :</span> </li>
-                                <li><span style="color:#3cc4ce">Modelo :</span></li>
-                                <li><span style="color:#3cc4ce">Motor :</span></li>
-                                <li><span style="color:#3cc4ce">Año :</span></li>
-                                <li><span style="color:#3cc4ce">Categoria :</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Marca :</span> <span style="color:beige"> Poner la marca del Automovil Ej: Bmw</span> </li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Modelo :</span> <span style="color:beige"> Poner el Modelo completo y exacto Ej:  e46 M3 cls</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Motor :</span> <span style="color:beige"> Poner La cilindrada, caballaje y turbos Ej: V8 4.5cc biturbo 740 cv</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Año :</span> <span style="color:beige"> Poner Año de fabricacion y duracion de está misma Ej: 2002-2008</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Categoria :</span> <span style="color:beige"> Hay 4 Categorias: SuperDeportivos - Deportivos - Clasicos - Tuning</span></li>
                                 <img class="float-sm-left"  src="../../../assets/car-4721367.svg" style="width: 500px; margin-left: 780px; margin-top: 20px;">
                                 <p style="color:yellow">por favor Cree coches con coherencia no fakes</p>
                               </ul>
@@ -67,44 +75,44 @@
                           </div>
 
                           <div class="row align-items-md-stretch">
-                            <div class="col-md-6">
-                              <div class="h-100 p-5 text-bg-dark rounded-3">
-                                <h2>Change the background</h2>
-                                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                                <button class="btn btn-outline-light" type="button">Example button</button>
+                            <div class="col-md-6" >
+                              <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url('https://pbs.twimg.com/media/FGag_E7WQAIEdQ_?format=jpg&name=medium');">
+                                <h2 style="color:rgb(12, 7, 7)">Max Verstappen</h2>
+                                <p style="color:black;">Actual <span style="color:rgb(19, 6, 194); font-size:larger">Campeón</span> de la Formula 1</p>
+
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="h-100 p-5 bg-light border rounded-3">
-                                <h2>Coches registrados</h2>
-                                <table class="table">
+                                <h2 style="text-align: center;">Coches registrados</h2>
+                                <table class="table mt-4">
                                   <thead>
                                     <tr>
-                                      <th>Name</th>
-                                      <th>Upvotes</th>
-                                      <th>Downvotes</th>
+                                      <th>Categoria</th>
+                                      <th>Ult-Mes</th>
+                                      <th>Total</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>Alice</td>
+                                      <td>Alta-Gama</td>
                                       <td>10</td>
                                       <td>11</td>
                                     </tr>
                                     <tr>
-                                      <td>Bob</td>
+                                      <td>Clasicos</td>
                                       <td>4</td>
                                       <td>3</td>
                                     </tr>
                                     <tr>
-                                      <td>Charlie</td>
+                                      <td>Deportivos</td>
                                       <td>7</td>
                                       <td>9</td>
                                     </tr>
                                   </tbody>
                                   <tfoot>
                                     <tr>
-                                      <td>Totals</td>
+                                      <td>Tuning</td>
                                       <td>21</td>
                                       <td>23</td>
                                     </tr>
