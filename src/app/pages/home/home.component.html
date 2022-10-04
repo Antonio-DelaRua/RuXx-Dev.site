@@ -1,0 +1,168 @@
+<body cz-shortcut-listen="true"  sytle="width:100%; height:100%;">
+
+
+
+  <main>
+    <div class="container-fluid mt-5" style="padding: 0px;">
+      <div>
+
+      </div>
+      <img  width="100%" height="100%"  src="../../../assets/WikiKar (1).jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+    </div>
+
+    <div class="container">
+
+      <div style="margin-top: 100px; text-align:center;">
+        <h1>Wiki Car</h1>
+      </div>
+      <div class="linea3"></div>
+
+      <div class="table-responsive mt-5">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Año</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Motor</th>
+              <th scope="col">Categoria</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let coche of Coches" >
+              <td>{{coche.anyo}}</td>
+              <td>{{coche.marca}}</td>
+              <td>{{coche.modelo}}</td>
+              <td>{{coche.motor}}</td>
+              <td style="color:rgb(5, 5, 5)">{{coche.categoria}}</td>
+
+              <td><button (click)="deleteCar"><i style="color:aqua" class="fa-solid fa-bug"></i></button></td>
+
+            </tr>
+
+          </tbody>
+        </table>
+        <p style="color:rgb(12, 142, 194); text-align:end">el botón de eliminar esta descactivado por razones obvias xD</p>
+      </div>
+      </div>
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="linea2"></div>
+
+      <div class="row featurette mt-4" style="margin-bottom: 150px;">
+        <div class="col-md-7" style="text-align: center; margin-top: 150px;">
+          <h2 class="featurette-heading fw-normal lh-2"><span style="color:red;">Ferrari 250 GTO </span> <span style="color:beige">1962 - 1964</span></h2>
+          <p class="lead">Actualmente el coche más caro del mundo, Tan solo 30 unidades </p>
+        </div>
+
+        <div class="col-md-5" style="margin-top: 50px;">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://c4.wallpaperflare.com/wallpaper/964/110/470/1962-250-ferrari-gto-wallpaper-preview.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        </div>
+      </div>
+      <div class="galeria">
+        <h1>Mis Coches Favoritos</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="https://noticias.coches.com/wp-content/uploads/2021/09/Ferrari-F40-Valeo-3.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Ferrari F40</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://images3.alphacoders.com/700/700305.jpg" alt="">
+                <div class="overlay">
+                    <h2>Toyota Supra MKIV</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://www.tuningblog.eu/wp-content/uploads/2018/12/Work-Meister-S1-Airride-Skyline-Nissan-GT-R-Tuning-2.jpg" alt="">
+                <div class="overlay">
+                    <h2>Nissan Skyline GTR</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://media.revistagq.com/photos/5e398a687c484c00080a225e/4:3/w_1039,h_779,c_limit/https___hypebeast.com_image_2020_01_2015-lamborghini-veneno-roadster-rm-sothebys-auction-info-01.jpg" alt="">
+                <div class="overlay">
+                    <h2>Lamborghini Veneno</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://periodismodelmotor.com/wp-content/uploads/2013/06/BMW-M3-CSL-trasera-curva.jpg" alt="">
+                <div class="overlay">
+                    <h2>Bmw M3 Cls</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://img.classistatic.de/api/v1/mo-prod/images/24/24762bad-a56b-47a6-ad61-02ee35d95ef1?rule=mo-1024.jpg" alt="">
+                <div class="overlay">
+                    <h2>Mazda Rx7 Veilside</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://www.km77.com/images/medium/2/2/6/5/porsche-911-gt3-rs-2022-lateral-frontal.362265.jpg" alt="">
+                <div class="overlay">
+                    <h2>Porsche gt3 RS</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://static.motor.es/fotos-noticias/2019/09/mercedes-amg-gt-r-black-series-render-201961097-1569349868_1.jpg" alt="">
+                <div class="overlay">
+                    <h2>Mercedes amg Gtr</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/ebay-mustang-eleanor-restomod-50.jpg?itok=jyBOP0Zp" alt="">
+                <div class="overlay">
+                    <h2>Shelby gt500 1967</h2>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+  </main>
+  <div class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" style="width: 100px;" src="https://seeklogo.com/images/F/ferrari-logo-7935CF173C-seeklogo.com.png" alt="..." aria-label="Microsoft Logo"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" style="width: 100px;" src="https://seeklogo.com/images/N/NOS-logo-A2536195F9-seeklogo.com.png" alt="..." aria-label="Google Logo"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" style="width: 200px;" src="https://cdn.worldvectorlogo.com/logos/lamborghini-logo-1.svg" alt="..." aria-label="Facebook Logo"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" style="width: 200px;" src="https://logos-download.com/wp-content/uploads/2016/04/Supra_logo_black.png" alt="..." aria-label="IBM Logo"></a>
+            </div>
+        </div>
+
+      </div>
+
+</div>
+
+
+      <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+
+  <div style="position: static !important;"></div>
+<div>
+<app-footer></app-footer>
+</div>
+</body>
