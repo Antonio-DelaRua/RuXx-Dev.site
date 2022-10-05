@@ -19,6 +19,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './pages/about/about.component';
 import { ConcesionarioComponent } from './pages/concesionario/concesionario.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FerrariComponent } from './components/Marcas/ferrari/ferrari.component';
+import { LamborghiniComponent } from './components/Marcas/lamborghini/lamborghini.component';
+import { BmwComponent } from './components/Marcas/bmw/bmw.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PorscheComponent } from './components/Marcas/porsche/porsche.component';
 
 
 
@@ -28,11 +33,16 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HomeComponent,
     CreateCarComponent,
-    
+
     NavbarComponent,
-         AboutComponent,
-         ConcesionarioComponent,
-         FooterComponent
+    AboutComponent,
+    ConcesionarioComponent,
+    FooterComponent,
+    FerrariComponent,
+    LamborghiniComponent,
+    BmwComponent,
+    NotFoundComponent,
+    PorscheComponent
   ],
   imports: [
     BrowserModule,
