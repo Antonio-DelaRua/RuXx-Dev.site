@@ -25,7 +25,7 @@ import { BmwComponent } from './components/Marcas/bmw/bmw.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PorscheComponent } from './components/Marcas/porsche/porsche.component';
 
-
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -51,7 +51,8 @@ import { PorscheComponent } from './components/Marcas/porsche/porsche.component'
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

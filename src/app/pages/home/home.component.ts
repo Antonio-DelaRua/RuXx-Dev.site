@@ -11,7 +11,8 @@ import { Coches } from 'src/app/post.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  Coches: Coches[] ;
+  public Coches: Coches[] ;
+  public page!: number;
 
 
   constructor(private postService: PostService) { }

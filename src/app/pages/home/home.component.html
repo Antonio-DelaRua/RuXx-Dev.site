@@ -30,7 +30,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let coche of Coches" >
+            <tr *ngFor="let coche of Coches | paginate: {itemsPerPage: 10, currentPage: page}" >
               <td>{{coche.anyo}}</td>
               <td>{{coche.marca}}</td>
               <td>{{coche.modelo}}</td>
@@ -42,6 +42,9 @@
             </tr>
 
           </tbody>
+          <br>
+          <br>
+          <pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next"></pagination-controls>
         </table>
         <p style="color:rgb(2, 2, 2); text-align:end">el botón de eliminar esta descactivado por razones obvias xD</p>
       </div>
@@ -55,7 +58,7 @@
 
       <div class="row featurette mt-4" style="margin-bottom: 150px;">
         <div class="col-md-7" style="text-align: center; margin-top: 150px;">
-          <h2 class="featurette-heading fw-normal lh-2"><span style="color:red;">Ferrari 250 GTO </span> <span style="color:aqua">1962 - 1964</span></h2>
+          <h2 class="featurette-heading fw-normal lh-2"><span style="color:red;">Ferrari 250 GTO </span> <span style="color:rgb(136, 139, 139)">1962 - 1964</span></h2>
           <p class="lead" style="color: black;">Actualmente el coche más caro del mundo, Tan solo 30 unidades </p>
         </div>
 
@@ -64,68 +67,36 @@
 
         </div>
       </div>
-      <div class="galeria">
-        <h1>Mis Coches Favoritos</h1>
-        <div class="linea "></div>
-        <div class="contenedor-imagenes img-fluid">
-            <div class="imagen">
-                <img src="https://noticias.coches.com/wp-content/uploads/2021/09/Ferrari-F40-Valeo-3.jpeg" alt="">
-                <div class="overlay">
-                    <h2>Ferrari F40</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://images3.alphacoders.com/700/700305.jpg" alt="">
-                <div class="overlay">
-                    <h2>Toyota Supra MKIV</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://www.tuningblog.eu/wp-content/uploads/2018/12/Work-Meister-S1-Airride-Skyline-Nissan-GT-R-Tuning-2.jpg" alt="">
-                <div class="overlay">
-                    <h2>Nissan Skyline GTR</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://media.revistagq.com/photos/5e398a687c484c00080a225e/4:3/w_1039,h_779,c_limit/https___hypebeast.com_image_2020_01_2015-lamborghini-veneno-roadster-rm-sothebys-auction-info-01.jpg" alt="">
-                <div class="overlay">
-                    <h2>Lamborghini Veneno</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://periodismodelmotor.com/wp-content/uploads/2013/06/BMW-M3-CSL-trasera-curva.jpg" alt="">
-                <div class="overlay">
-                    <h2>Bmw M3 Cls</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://img.classistatic.de/api/v1/mo-prod/images/24/24762bad-a56b-47a6-ad61-02ee35d95ef1?rule=mo-1024.jpg" alt="">
-                <div class="overlay">
-                    <h2>Mazda Rx7 Veilside</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://www.km77.com/images/medium/2/2/6/5/porsche-911-gt3-rs-2022-lateral-frontal.362265.jpg" alt="">
-                <div class="overlay">
-                    <h2>Porsche gt3 RS</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://static.motor.es/fotos-noticias/2019/09/mercedes-amg-gt-r-black-series-render-201961097-1569349868_1.jpg" alt="">
-                <div class="overlay">
-                    <h2>Mercedes amg Gtr</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/ebay-mustang-eleanor-restomod-50.jpg?itok=jyBOP0Zp" alt="">
-                <div class="overlay">
-                    <h2>Shelby gt500 1967</h2>
-                </div>
-            </div>
-          </div>
+
+
+
+         <div class="container-galery">
+
+        <h1>Coches Favoritos</h1>
+
+        <div class="linea"></div>
+
+        <div class="image-container">
+
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Toyota Supra</h3><img src="https://noticias.coches.com/wp-content/uploads/2021/09/Ferrari-F40-Valeo-3.jpeg" alt=""></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Toyota Supra</h3><img src="https://wallpapercrafter.com/desktop/162433-car-vehicle-Toyota-Toyota-Supra-Khyzyl-Saleem-colored-wheels.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Nissan Skyline R34 GTR</h3><img src="https://www.tuningblog.eu/wp-content/uploads/2018/12/Work-Meister-S1-Airride-Skyline-Nissan-GT-R-Tuning-2.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Lamborghini Veneno</h3><img src="https://media.revistagq.com/photos/5e398a687c484c00080a225e/4:3/w_1039,h_779,c_limit/https___hypebeast.com_image_2020_01_2015-lamborghini-veneno-roadster-rm-sothebys-auction-info-01.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">BMW M3 cls e46</h3><img src="https://periodismodelmotor.com/wp-content/uploads/2013/06/BMW-M3-CSL-trasera-curva.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Porsche GT3 RS</h3><img src="https://www.km77.com/images/medium/2/2/6/5/porsche-911-gt3-rs-2022-lateral-frontal.362265.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Mclaren P1</h3><img src="https://wallpaperaccess.com/full/155140.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">ferrari 458 Liberty walk</h3><img src="https://www.wallpaperup.com/uploads/wallpapers/2015/08/01/768700/d2769c67f043e04e257a9498e95c0849-700.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Lamborghini Aventador sv</h3><img src="https://www.tuningblog.eu/wp-content/uploads/2021/09/BiTurbo-Lamborghini-Aventador-SVJ-Underground-Performance-Tuning-12.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center ;color:darkcyan">Lancer Evolution IX</h3><img src="https://i.pinimg.com/originals/02/47/df/0247df7aba5d48dea03f729b70cd3b6e.jpg" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Mercedes GTR Amg</h3><img src="https://robbreport.com/wp-content/uploads/2022/03/2-4.jpg?w=1000" alt="" ></div>
+          <div class="image"><h3 style="text-align: center;color:darkcyan">Posche Carrera Gt</h3><img src="https://i.pinimg.com/originals/61/4a/10/614a107b35fb83988d2e1533bbb99023.jpg" alt="" ></div>
+
+
         </div>
 
 
+
+      </div>
 
 
 
