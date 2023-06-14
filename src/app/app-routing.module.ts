@@ -19,9 +19,9 @@ const routes: Routes = [
 
 
   {path:'', redirectTo: 'RuXx', pathMatch: 'full'},
+  {path: 'RuXx', component: AboutComponent},
   {path: 'home', component: HomeComponent},
   {path: 'create', component: CreateCarComponent},
-  {path: 'RuXx', component: AboutComponent},
   {path: 'concesionario',  component: ConcesionarioComponent},
   {path: 'Ferrari', component: FerrariComponent},
   {path: 'Lamborghini', component: LamborghiniComponent},
