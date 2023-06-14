@@ -18,7 +18,7 @@ import { PorscheComponent } from './components/Marcas/porsche/porsche.component'
 const routes: Routes = [
 
 
-  {path:'', redirectTo: 'home', pathMatch: 'full'},
+  {path:'', redirectTo: 'RuXx', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'create', component: CreateCarComponent},
   {path: 'RuXx', component: AboutComponent},
