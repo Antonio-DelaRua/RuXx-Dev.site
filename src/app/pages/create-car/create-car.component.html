@@ -1,0 +1,133 @@
+
+                    <html >
+
+                      <div class="wrapper" style="height:100%; background-image: url('https://fotografias.lasexta.com/clipping/cmsimages01/2020/05/15/5818DFDC-51C2-48FE-BB24-3614F6DAF93E/98.jpg?crop=947,533,x167,y0&width=1900&height=1069&optimize=high&format=webply'); background-repeat: no-repeat;">
+                          <div  class="body">
+
+
+
+                                          <div class="card-body " >
+                                              <h3 style="color:rgb(174, 209, 18)">Agregar Coche </h3>
+
+                                              <form class="mt-4" [formGroup]="cocheForm" (ngSubmit)="onSubmit()">
+                                                  <div class="row">
+                                                      <div >
+                                                          <input type="text" class="form-control form-control-lg mt-4" formControlName="imagen" placeholder="Imagen">
+                                                      </div>
+                                                      <div >
+                                                          <input type="text" class="form-control form-control-lg mt-4" formControlName="marca" placeholder="Marca">
+                                                      </div>
+                                                  </div>
+                                                  <input type="text" class="form-control form-control-lg mt-4" formControlName="modelo" placeholder="Modelo">
+                                                  <input type="text" class="form-control form-control-lg mt-4" formControlName="motor" placeholder="Motor">
+                                                  <input type="text" class="form-control form-control-lg mt-4" formControlName="anyo" placeholder="Año">
+                                                  <input type="text" class="form-control form-control-lg mt-4" formControlName="categoria" placeholder="Categoria">
+                                                  <br>
+                                                  <div class="mt-3 ">
+                                                      <button type="text" class="btn btn-warning btn-lg " routerLink="/home">Volver</button>
+                                                      -
+                                                      <button type="submit" class="btn btn-primary btn-lg ">Crear</button>
+                                                  </div>
+                                                  <br>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </div>
+
+
+
+
+
+
+                      <main>
+                        <div class="container py-4">
+                          <header class="pb-3 mb-4 border-bottom">
+                            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+
+                            </a>
+                          </header>
+
+                          <div class="p-5 mb-4 bg-light rounded-3" style="background-image: url('/assets/road-7148369.jpg');">
+                            <div class="container-fluid py-5">
+                              <h1 class="display-5 fw-bold"> <span style="color:#3cc4ce">Instrucciones</span>  de creacion</h1>
+                              <br>
+                              <br>
+
+                              <ul>
+                                <li><span style="color:#3cc4ce">imagen :</span> <span style="color:beige"> Poner enlace de la imagen Ej: https://lamborghini.3434.jpg</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Marca :</span> <span style="color:beige"> Poner la marca del Automovil Ej: Bmw</span> </li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Modelo :</span> <span style="color:beige"> Poner el Modelo completo y exacto Ej:  e46 M3 cls</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Motor :</span> <span style="color:beige"> Poner La cilindrada, caballaje y turbos Ej: V8 4.5cc biturbo 740 cv</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Año :</span> <span style="color:beige"> Poner Año de fabricacion y duracion de está misma Ej: 2002-2008</span></li>
+                                <br>
+                                <li><span style="color:#3cc4ce">Categoria :</span> <span style="color:beige"> Hay 4 Categorias: SuperDeportivos - Deportivos - Clasicos - Tuning</span></li>
+                                <img class="float-sm-left"  src="/assets/car-4721367.svg" style="width: 500px; margin-left: 780px; margin-top: 20px;">
+                                <p style="color:yellow">por favor Cree coches con coherencia no fakes</p>
+                              </ul>
+
+
+                            </div>
+                          </div>
+
+                          <div class="row align-items-md-stretch">
+                            <div class="col-md-6" >
+                              <div class="h-100 p-5 text-bg-dark rounded-3" style="background-image: url('https://pbs.twimg.com/media/FGag_E7WQAIEdQ_?format=jpg&name=medium');">
+                                <h2 style="color:rgb(12, 7, 7)">Max Verstappen</h2>
+                                <p style="color:black;">Actual <span style="color:rgb(19, 6, 194); font-size:larger">Campeón</span> de la Formula 1</p>
+
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="tabla h-100 p-5 bg-light border rounded-3">
+                                <h2 style="text-align: center;">Coches registrados</h2>
+                                <table class="table mt-4">
+                                  <thead>
+                                    <tr>
+                                      <th>Categoria</th>
+                                      <th>Ult-Mes</th>
+                                      <th>Total</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Alta-Gama</td>
+                                      <td>10</td>
+                                      <td>11</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Clasicos</td>
+                                      <td>4</td>
+                                      <td>3</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Deportivos</td>
+                                      <td>7</td>
+                                      <td>9</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <td>Tuning</td>
+                                      <td>21</td>
+                                      <td>23</td>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+
+                          <footer class="pt-3 mt-4 text-muted border-top">
+
+                          </footer>
+                        </div>
+                      </main>
+
+                      <app-footer></app-footer>
+
+                      </html>
