@@ -1,58 +1,19 @@
-<nav class="navbar  fixed-top">
-  <div class="container-fluid">
-    <img class="navbar-brand" src="../../../assets/Rux-text.png" style="width: 200px; margin-left: 20px;" >
 
+<div class="navba">
+<nav>
+    <h2 class="logo">RuXx<span>Dev.</span>Site</h2>
+    <ul class="nav-links">
+      <li><a routerLink="/RuXx" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/home" routerLinkActive="active">WikiKar</a></li>
+      <li><a routerLink="/concesionario" routerLinkActive="active">Garage</a></li>
+      <li><a routerLink="/Ferrari" routerLinkActive="active">ferrari</a></li>
+      <li><a routerLink="/Lamborghini" routerLinkActive="active">Lamborghini</a></li>
+      <li><a routerLink="/Bmw" routerLinkActive="active">Bmw</a></li>
+      <li><a routerLink="/Porsche" routerLinkActive="active">Posche</a></li>
+      
+    </ul>
+    <button type="submit" >Registrate</button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color:aqua;">RuXx Wiki</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-warning" type="submit">Search</button>
-        </form>
-        <br>
+  </nav>
 
-            <a class="nav-link active" aria-current="page"  routerLink="/home" style="color:yellow">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"routerLink="/RuXx">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLink="/concesionario">Concesionario</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Marcas
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" routerLink="/Ferrari">Ferrari</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" routerLink="/Lamborghini">Lamborghini</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" routerLink="/Bmw">Bmw</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" routerLink="/Porsche">Porsche</a></li>
-
-            </ul>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-  </div>
-</nav>
+</div>
