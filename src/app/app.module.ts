@@ -31,11 +31,10 @@ import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
     HomeComponent,
     CreateCarComponent,
-
     NavbarComponent,
-    AboutComponent,
     ConcesionarioComponent,
     FooterComponent,
     FerrariComponent,
