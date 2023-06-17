@@ -59,15 +59,17 @@
               <td style="color:aliceblue">{{coche.motor}}</td>
               <td style="color:aliceblue">{{coche.categoria}}</td>
 
-              <td><button (click)="deleteCar"><i style="color:#25AEB6" class="fa-solid fa-bug"></i></button></td>
+              <td><button (click)="deleteCar"><i style="color:#25AEB6" class="fas fa-trash-alt"></i></button></td>
 
             </tr>
 
           </tbody>
           <br>
           <br>
-          <pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next" style="color:aliceblue"></pagination-controls>
-        </table>
+          </table>
+          <div class="d-flex justify-content-center">
+          <pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next" style="color:aliceblue;"></pagination-controls>
+          </div>
         <div class="d-flex justify-content-center">
           <button class="btn btn-secondary btn-lg" routerLink="/create" sstyle="background-color: #25AEB6;">Crear Coche</button>
         </div>
