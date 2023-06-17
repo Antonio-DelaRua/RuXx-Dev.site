@@ -19,7 +19,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Marcas
           </a>
-          <ul class="dropdown-menu" style="background-color: #51160D;">
+          <ul class="dropdown-menu" (click)="toggleMenu()" style="background-color: #51160D;">
             <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Ferrari" routerLinkActive="active">Ferrari</a></li>
             <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Bmw" routerLinkActive="active">BmwPower</a></li>
             <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Lamborghini" routerLinkActive="active">Lamborghini</a></li>
