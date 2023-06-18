@@ -7,6 +7,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   isMenuOpen: boolean = false;
+ 
 
   constructor(private renderer: Renderer2) {}
 
@@ -21,7 +22,7 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
+ 
 
   ngOnInit(): void {}
 }
-
