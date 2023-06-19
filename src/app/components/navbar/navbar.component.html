@@ -5,33 +5,29 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" (click)="toggleMenu()">
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/RuXx" routerLinkActive="active" >Home</a>
+          <a class="nav-link" (click)="toggleMenu()" routerLink="/RuXx" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active" >WikiKar</a>
+          <a class="nav-link" (click)="toggleMenu()" routerLink="/home" routerLinkActive="active">WikiKar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/concesionario" routerLinkActive="active">Garage</a>
+          <a class="nav-link" (click)="toggleMenu()" routerLink="/concesionario" routerLinkActive="active">Garage</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Marcas
           </a>
-          <ul class="dropdown-menu " style="background-color: #51160D;">
-            <li><a class="dropdown-item " routerLink="/Ferrari" routerLinkActive="active">Ferrari</a></li>
-            <li><a class="dropdown-item " routerLink="/Bmw" routerLinkActive="active">BmwPower</a></li>
-            <li><a class="dropdown-item " routerLink="/Lamborghini" routerLinkActive="active">Lamborghini</a></li>
-            <li><a class="dropdown-item " routerLink="/Porsche" routerLinkActive="active">Porsche</a></li>
-            
-            
+          <ul class="dropdown-menu" (click)="toggleMenu()" style="background-color: #51160D;">
+            <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Ferrari" routerLinkActive="active">Ferrari</a></li>
+            <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Bmw" routerLinkActive="active">BmwPower</a></li>
+            <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Lamborghini" routerLinkActive="active">Lamborghini</a></li>
+            <li><a class="dropdown-item" (click)="toggleMenu()" routerLink="/Porsche" routerLinkActive="active">Porsche</a></li>
           </ul>
         </li>
-        
       </ul>
-      
     </div>
-    <button class="btn btn-primary" type="submit">Registrate</button>
+    <button class="btn btn-primary" type="submit"><a  style="font-size: bold; color: aliceblue; text-decoration: none;" href="https://ibb.co/LRwpyGy">Currículum</a></button>
   </div>
 </nav>
