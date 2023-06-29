@@ -31,7 +31,7 @@ jobs:
     - name: copy into antonio folder dependencies
       run: |
           mkdir ~/antonio &&
-          cp -r dist/wikikar/* ~/antonio &&
+          cp -r dist/RuXx-Dev.site/* ~/antonio &&
           mv ~/antonio .
 
   
