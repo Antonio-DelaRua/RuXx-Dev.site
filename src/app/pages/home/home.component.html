@@ -17,7 +17,7 @@
     <div class="container">
 
       <div style="margin-top: 100px; text-align:center;">
-        <h1 style="color:aliceblue">Wiki Car</h1>
+        <h1 style="color:aliceblue; font-family: Orbitron;">Wiki Car</h1>
       </div>
        <!-- START THE FEATURETTES -->
 
@@ -51,7 +51,7 @@
               <th scope="col" style="color:aliceblue"></th>
             </tr>
           </thead>
-          <tbody style="color:aliceblue">
+          <tbody style="color:aliceblue; font-family: Orbitron;">
             <tr *ngFor="let coche of Coches | paginate: {itemsPerPage: 10, currentPage: page}" style="color:aliceblue" >
               <td style="color:aliceblue">{{coche.anyo}}</td>
               <td style="color:aliceblue">{{coche.marca}}</td>
@@ -68,10 +68,10 @@
           <br>
           </table>
           <div class="d-flex justify-content-center">
-          <pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next" style="color:aliceblue;"></pagination-controls>
+          <pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next" style="color:aliceblue;font-family: Orbitron;"></pagination-controls>
           </div>
         <div class="d-flex justify-content-center">
-          <button class="btn btn-secondary btn-lg" routerLink="/create" sstyle="background-color: #25AEB6;">Crear Coche</button>
+          <button class="btn btn-secondary btn-lg" routerLink="/create" style="background-color: #25AEB6;font-family: Orbitron;">Crear Coche</button>
         </div>
         
       </div>
@@ -84,7 +84,7 @@
 
          <div class="container-galery">
 
-        <h1 style="color:aliceblue">Coches Favoritos</h1>
+        <h1 style="color:aliceblue; font-family: Orbitron;">Coches Favoritos</h1>
 
         <div class="linea"></div>
 
