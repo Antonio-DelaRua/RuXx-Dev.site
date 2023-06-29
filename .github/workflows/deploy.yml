@@ -42,20 +42,6 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key &&
           chmod 600 ~/.ssh/deploy_key
 
-    - name: Execute remote command using ssh template
-      uses: cross-the-world/ssh-pipeline@v1.2.0
-      with:
-            # hostname / IP of the server
-            host: ${{secrets.REMOTE_HOST}}
-            # ssh port of the server
-            port: 22 # optional, default is 22
-            # user of the server
-            user: ${{secrets.REMOTE_USER}}
-            # private ssh key registered on the server
-            pass: ${{secrets.REMOTE_PASS}}
-            # command to be executed
-            script: chmod -R 774 /var/www/html/* ; chown -R www-data:www-data /var/www/html ; rm -rf /var/www/html/antonio/*         
-
     - name: Copy to remote using sct template
       uses: appleboy/scp-action@master
       with:
@@ -74,4 +60,16 @@ jobs:
         # destination to download on server
         target: "/var/www/html" # optional
 
-    
+    - name: Execute remote command using ssh template
+      uses: cross-the-world/ssh-pipeline@v1.2.0
+      with:
+        # hostname / IP of the server
+        host: ${{secrets.REMOTE_HOST}}
+        # ssh port of the server
+        port: 22 # optional, default is 22
+        # user of the server
+        user: ${{secrets.REMOTE_USER}}
+        # private ssh key registered on the server
+        pass: ${{secrets.REMOTE_PASS}}
+        # command to be executed
+        script: chmod -R 774 /var/www/html/* ; chown -R www-data:www-data /var/www/html
