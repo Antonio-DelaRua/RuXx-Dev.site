@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Manrope:wght@400;700&family=Orbitron:wght@600&display=swap');
+
+
+
 body {
   height: 100%;
   background: #360033;  /* fallback for old browsers */
@@ -7,6 +12,12 @@ background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, F
 
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', sans-serif;
+}
+p, span, a{
+  font-family: 'Manrope', sans-serif;
+}
 
 
 
