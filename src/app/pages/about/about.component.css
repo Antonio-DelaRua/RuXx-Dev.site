@@ -1,8 +1,13 @@
 
+:root {
+  --bs-table-bg: initial; /* Restablece el valor de --bs-table-bg al valor inicial */
+}
 
 .stretched-link{
   color:beige;
 }
+
+
 
 .colorlink {
   color:beige;
