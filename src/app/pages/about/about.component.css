@@ -1,8 +1,15 @@
 
-
 .stretched-link{
-  color:beige
+  color:beige;
 }
+
+
+
+.colorlink {
+  color:beige;
+  text-decoration: none;
+}
+
 
 .post{
   color:#07bdc4;
@@ -14,4 +21,6 @@
   width: 80%;
 
 }
+
+
 
