@@ -1,6 +1,10 @@
-
 :root {
-  --bs-table-bg: initial; /* Restablece el valor de --bs-table-bg al valor inicial */
+  --bs-body-bg: transparent;
+}
+
+
+table {
+  background: var(--bs-body-bg);
 }
 
 .stretched-link{
