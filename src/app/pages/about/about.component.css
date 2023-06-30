@@ -1,8 +1,4 @@
 
-:root {
-  --bs-table-bg: transparent; /* Restablece el valor de --bs-table-bg al valor inicial */
-}
-
 .stretched-link{
   color:beige;
 }
