@@ -7,5 +7,5 @@
 30/06/2023  Version 0.0.5
 
 le inserto los diplomas y practicamente falta retocar algunos textos.
-
+-
 30/06/2023  Version 0.0.6
