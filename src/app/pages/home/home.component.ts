@@ -24,10 +24,14 @@ export class HomeComponent implements OnInit {
           id: e.payload.doc.id,
           ...(e.payload.doc.data() as Coches)
         };
+      }).sort((a, b) => {
+        // Ordenar alfabéticamente por el campo "name"
+        return a.anyo.localeCompare(b.anyo);
       });
     });
-
   }
+
+  
 
 deleteCar = ( Coches) => this.postService.deletePost(Coches);
 
